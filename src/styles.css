@@ -1,0 +1,84 @@
+:root {
+  --leftPosition: calc(50%);
+  --background: blue;
+  --boardH: 80vh;
+  --boardw: 80vw;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  /*box-sizing: border-box;*/
+  font-family: sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#board {
+ 
+  margin-top: 10px;
+  position: relative;
+  background-color: #333;
+  height: var(--boardH);
+  width: var(--boardw);
+}
+
+
+.stride {
+  position: fixed;
+  /*border-radius: 20%;*/
+  /*display: inline;*/
+  height: 3vh;
+  width: 12vw;
+  background-color: var(--background);
+  
+}
+
+#s1 {
+  margin-top: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  /* bottom: 0; */
+  left: var(--leftPosition);
+  /* left:2%; */
+  right: 0;
+  background-color: blue;
+  /* margin: auto; */
+}
+
+#s2 {
+  margin-bottom: 5px;s
+  display: inline-block;
+  position: absolute;
+  /* top:0; */
+  bottom: 0;
+  left: var(--leftPosition);
+  right: 0;
+
+  /* margin: auto; */
+}
+
+.ball {
+  position: fixed;
+  width: 5vh;
+  height: 5vh;
+  background-color: red;
+  border-radius: 50%;
+  top: calc(6%);
+  left: calc(50%);
+}
+.p1{
+  display: inline;
+}
+.p2{
+  margin-left: 20px;
+  display: inline;
+}
